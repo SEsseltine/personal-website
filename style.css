@@ -1,0 +1,18 @@
+html, body{
+    padding: 0;
+    margin: 0;
+    min-height: 100vh;
+}
+
+.hero {
+    height: 100vh;
+    background-image: url('me-at-waterfall.JPG');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 45% 65%;
+    overflow: hidden;
+}
+
+.hero nav{
+    background-color: rgba(0, 0, 0, .5);
+}
