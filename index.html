@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <head>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="./style/main.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
@@ -8,44 +8,58 @@
     <script src="https://kit.fontawesome.com/110b9a8f62.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="hero">
-        <nav class="navbar navbar-dark navbar-expand-md justify-content-md-center justify-content-start">
-            <a class="navbar-brand" href="#">Shawn Esseltine</a> 
+    <div class="hero" id="home">
+        <nav id="main-nav" class="navbar navbar-dark navbar-expand-md justify-content-md-center justify-content-start fixed-top bg-dark">
+            <span class="navbar-brand align-middle">Shawn Esseltine</span> 
             <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#collapsingNavbar2">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="navbar-collapse collapse justify-content-between align-items-center w-100" id="collapsingNavbar2">
                 <ul class="navbar-nav mx-auto text-md-center text-left">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home</a> 
+                    <li class="nav-item active text-center">
+                        <a class="nav-link" href="#home">Home</a> 
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About Me</a> 
+                    <li class="nav-item text-center">
+                        <a class="nav-link" href="#about">About</a> 
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item text-center">
                         <a class="nav-link" href="https://esseltinemarketing.com/">Esseltine Marketing</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="btn btn-danger ml-2" href="#">Resume</a> 
+                    <li class="nav-item text-center">
+                        <a class="btn btn-danger ml-md-2" href="./Shawn_Esseltine_Resume.pdf">Resume</a> 
                     </li>
                 </ul>
-                <ul class="nav navbar-nav flex-row justify-content-md-center justify-content-start flex-nowrap">
-                    <li class="nav-item"><a class="nav-link" href="https://www.facebook.com/shawnesseltine"><i class="fa fa-facebook mr-2"></i></a></li>
-                    <li class="nav-item"><a class="nav-link" href="https://www.instagram.com/shawnesseltine/"><i class="fa fa-instagram mr-2"></i></a></li>
-                    <li class="nav-item"><a class="nav-link" href="https://www.github.com/sesseltine/"><i class="fa fa-github mr-2"></i></a></li>
-                    <li class="nav-item"><a class="nav-link" href="https://www.linkedin.com/in/shawn-esseltine/"><i class="fa fa-linkedin mr-2"></i></a></li>
+                <ul class="navbar-nav text-md-end social">
+                    <li class="nav-item text-center social-ico"><a class="nav-link" href="https://www.facebook.com/shawnesseltine"><i class="fa fa-facebook mr-2"></i></a></li>
+                    <li class="nav-item text-center social-ico"><a class="nav-link" href="https://www.instagram.com/shawnesseltine/"><i class="fa fa-instagram mr-2"></i></a></li>
+                    <li class="nav-item text-center social-ico"><a class="nav-link" href="https://www.github.com/sesseltine/"><i class="fa fa-github mr-2"></i></a></li>
+                    <li class="nav-item text-center social-ico"><a class="nav-link" href="https://www.linkedin.com/in/shawn-esseltine/"><i class="fa fa-linkedin mr-2"></i></a></li>
                 </ul>
             </div>
         </nav>
         <div class="container h-100">
             <div class="d-flex align-items-center h-100 pb-sm-5">
-                <div class="col-md-5 col-lg-6 col-xl-6 text-light">
-                    <h3>Hi, I'm Shawn</h3>
+                <div class="col-md-6 col-lg-6 col-xl-6 text-light">
+                    <h2>Hi, I'm Shawn</h2>
                     <p class="text-white-50">Fancy getting to know a CS student?</p>
-                    <button type="button" class="btn btn-outline-light">About Me</button>
-                    <button type="button" class="btn btn-outline-danger ml-2">Resume</button>
+                    <a class="btn btn-outline-light" href="#about">About Me</a>
+                    <a href="./Shawn_Esseltine_Resume.pdf" class="btn btn-outline-danger ml-2">Resume</a>
                 </div>
             </div>
+        </div>
+    </div>
+    <div class="blue-bg">
+        <div class="container py-5" id="about">
+            <h2 class="text-center text-white">About Me</h2>
+            <hr/>
+            <p class="text-light p-4">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+        </div>
+    </div>
+    <div>
+        <div class="container py-5" id="projects">
+            <h2 class="text-center">My Projects</h2>
+            <hr/>
+            <p class="p-4">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
         </div>
     </div>
 </body>

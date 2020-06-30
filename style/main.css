@@ -1,0 +1,29 @@
+html, body{
+    padding: 0;
+    margin: 0;
+    min-height: 100vh;
+}
+
+.hero {
+    height: 100vh;
+    background-image: url('../img/me-at-waterfall.JPG');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 45% 65%;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+.social{
+    display: block!important;
+    text-align: center;
+}
+
+.social-ico{
+    display: inline-block;
+    margin: 2px 5px;
+}
+
+.blue-bg{
+    background-color: #4682B4;
+}
