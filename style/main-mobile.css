@@ -29,6 +29,7 @@
     background-size: cover;
     background-position-x: right;
     background-position-y: top;
+    overflow: hidden;
 }
 
 .fa {
